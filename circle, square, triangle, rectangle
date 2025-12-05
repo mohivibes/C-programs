@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+ double radius,side,length,breadth,base,height;
+ double circle,square,rectangle,triangle;
+ printf("enter the values of radius,side,length,breadth,base,height :");
+
+scanf("%lf%lf%lf%lf%lf%lf",&radius,&side,&length,&breadth,&base,&height
+);
+ circle=3.14*radius*radius;
+ square=side*side;
+ rectangle=length*breadth;
+ triangle=0.5*(base*height);
+ printf("\narea of cirlce is:%lf",circle);
+ printf("\narea of square is:%lf",square);
+ printf("\narea of rectangle is:%lf",rectangle);
+ printf("\narea of triangle is:%lf",triangle);
+ return 0;
+} 
