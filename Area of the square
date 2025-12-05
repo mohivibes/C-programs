@@ -1,0 +1,14 @@
+
+#include <stdio.h>
+int main() {
+ double side, area;
+ printf("Enter the side length of the square: ");
+ scanf("%lf", &side);
+ if (side >= 0) {
+ area = side * side;
+ printf("Area of the square: %.2lf\n", area);
+ } else {
+ printf("Invalid input. Side length cannot be negative.\n");
+ }
+ return 0;
+} 
