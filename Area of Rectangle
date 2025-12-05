@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+int main() {
+ double length, width, area;
+ printf("Enter the length of the rectangle: ");
+ scanf("%lf", &length);
+ printf("Enter the width of the rectangle: ");
+ scanf("%lf", &width);
+ if (length >= 0 && width >= 0) {
+ area = length * width;
+ printf("Area of the rectangle: %.2lf\n", area);
+ } else {
+ printf("Invalid input. Length and width cannot be negative.\n");
+ }
+ return 0;
+}
