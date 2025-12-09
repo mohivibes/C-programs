@@ -1,25 +1,25 @@
-#include<stdio.h>
-int find_lcm(int,int);
-int main()
-{
- int a, b, lcm;
- printf("\n\nEnter 2 integers to find LCM of:\n");
- scanf("%d%d", &a, &b);
- lcm = find_lcm(a,b);
- printf("\n\n LCM of %d and %d is: %d\n\n", a, b, lcm);
- return 0;
-}
-int find_lcm(int a, int b)
-{
- static int temp = 1;
- if(temp%a == 0 && temp%b == 0)
- {
- return temp;
- }
- else
- {
- temp++;
- find_lcm(a,b);
- return temp;
- }
+#include <stdio.h>
+
+int main() {
+    int a, b, lcm;
+
+    // Input two numbers
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    // Start from the larger number
+    lcm = (a > b) ? a : b;
+
+    // Keep increasing until we find a common multiple
+    while (1) {
+        if (lcm % a == 0 && lcm % b == 0) {
+            // Found the LCM
+            break;
+        }
+        lcm++;  // check next number
+    }
+
+    printf("LCM of %d and %d = %d", a, b, lcm);
+
+    return 0;
 }
