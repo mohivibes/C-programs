@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+   float s1,s2,s3,s4,s5;
+   float sum,average;
+   printf("Enter five subjects:");
+   scanf("%f%f%f%f%f",&s1,&s2,&s3,&s4,&s5);
+   
+   sum = s1 + s2 + s3 + s4 + s5;
+   average = sum / 5;
+   
+   printf("sum = %.2f",sum);
+   printf("\naverage = %.2f",average);
+   return 0;
